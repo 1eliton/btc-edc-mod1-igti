@@ -6,6 +6,7 @@ on:
 
 jobs:
   job_checkout_gcp:
+    runs-on: ubuntu-latest
     name: Teste de setup GH Actions
 
     steps:
