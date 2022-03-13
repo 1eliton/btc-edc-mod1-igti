@@ -1,4 +1,4 @@
-name: Push on PR
+name: Push on develop
 
 on:
   push:
