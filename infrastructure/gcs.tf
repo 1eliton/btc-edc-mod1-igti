@@ -1,6 +1,7 @@
 
-# Create a GCS Bucket
+
+# Create a GCS Bucket -- raw data
 resource "google_storage_bucket" "enem_staging" {
-    name = "enem/raw_data"
+    name = "raw_data"
     location = var.region
 }
