@@ -1,5 +1,0 @@
-name: Push on master
-
-on:
-  push:
-    branches: [master]
