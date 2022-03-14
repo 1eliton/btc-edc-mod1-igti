@@ -31,6 +31,6 @@ resource "google_cloudfunctions_function" "function" {
     # 
     event_trigger {
         event_type = "google.storage.object.finalize"
-        resource   = "${var.project_id}-input"
+        resource   = "poc_igti_btc_edc_enem_raw_data_001" #"${var.project_id}-input"
     }
 }
