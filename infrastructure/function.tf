@@ -26,10 +26,11 @@ resource "google_cloudfunctions_function" "function" {
     source_archive_object = google_storage_bucket_object.zip.name
 
     # Must match the function name in the cloud function `main.py` source code
-    entry_point           = "hello_gcs"
+    entry_point           = "hello_gcs_bq"
     
     # 
     event_trigger {
+        # https://cloud.google.com/functions/docs/calling/storage#finalize
         event_type = "google.storage.object.finalize"
         resource   = "poc_igti_btc_edc_enem_raw_data_001" #"${var.project_id}-input"
     }
